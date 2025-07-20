@@ -1,49 +1,38 @@
 # sphinx build directories
 _build/
-
 # dotfiles
 .*
 !.gitignore
 !.github
 !.mailmap
-
 # compiled python files
 *.py[co]
 *.py[cod]
 *$py.class
 __pycache__/
-
 # setup.py egg_info
 *.egg-info
 .eggs/
-
 # emacs backup files
 *~
-
 # hg stuff
 *.orig
 status
-
 # odoo filestore
 odoo/filestore
-
 # maintenance migration scripts
 odoo/addons/base/maintenance
-
 # window installation config file
 /odoo.conf
 *.conf
 *.cfg
-
 # generated for windows installer?
 install/win32/*.bat
 install/win32/meta.py
-
 # needed only when building for win32
 setup/win32/static/less/
 setup/win32/static/wkhtmltopdf/
 setup/win32/static/postgresql*.exe
-
 # js tooling
 node_modules
 jsconfig.json
@@ -51,7 +40,6 @@ tsconfig.json
 package-lock.json
 package.json
 .husky
-
 # various virtualenv
 /bin/
 /build/
@@ -62,7 +50,6 @@ package.json
 /share/
 /src/
 /bower_components/
-
 # Additional
 # Virtual environments:
 .env
@@ -72,7 +59,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
 # Temp files:
 *.log
 *.pot
@@ -81,14 +67,11 @@ venv.bak/
 *.swo
 *.tmp
 *.bak
-
 # Archivos de base de datos
 *.db
 *.sqlite3
-
 # Documentation:
 docs/_build/
-
 # Testing files:
 .tox/
 .coverage
@@ -99,7 +82,6 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
 # IDEs:
 .idea/
 .vscode/
@@ -108,19 +90,15 @@ coverage.xml
 .spyderproject
 .spyproject
 .ropeproject
-
 # System files:
 .DS_Store
 Thumbs.db
-
 # Odoo directories:
 data_tmp/
 local_settings.py
-
 # Docker and others:
 *.pid
 docker-compose.yml
 celerybeat-schedule
-
 # Exclude some files:
 !important.txt
