@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+"access_ir_default_all","ir_default all","model_ir_default",,0,0,0,0
+"access_ir_default_group_user","ir_default group_user","model_ir_default","group_user",1,1,1,1
+"access_ir_default_group_system","ir_default group_system","model_ir_default","group_system",1,1,1,1
