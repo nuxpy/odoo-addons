@@ -1,0 +1,70 @@
+<odoo>
+    <data>
+
+        <record id="git_repository_list" model="ir.ui.view">
+            <field name="name">git.repository.list</field>
+            <field name="model">git.repository</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" placeholder="OCA/server-tools"/>
+                    <field name="url" placeholder="https://github.com/OCA/server-tools"/>
+                    <field name="branch" placeholder="17.0"/>
+                    <field name="addons_path" invisible="1"/>
+                    <button name="git_pull"
+                        string="Update"
+                        type="object"
+                        icon="fa-refresh"
+                        invisible="addons_path == False"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="git_repository_form" model="ir.ui.view">
+            <field name="name">git.repository.form</field>
+            <field name="model">git.repository</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name" placeholder="OCA/server-tools"/>
+                            <field name="url" placeholder="https://github.com/OCA/server-tools"/>
+                            <field name="branch" placeholder="16.0"/>
+                        </group>
+                        <div class="oe_row">
+                            <p>
+                                You must add the repository path to the <b>addons_path</b> variable in the Odoo configuration file and restart the service to apply the changes.
+                            </p>
+                        </div>
+                        <group>
+                            <field name="addons_path" style="font-weight: bold;"/>
+                        </group>
+                        <button name="git_pull"
+                            string="Update"
+                            type="object"
+                            icon="fa-refresh"
+                            invisible="addons_path == False"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="git_repository_action" model="ir.actions.act_window">
+            <field name="name">Git Repository</field>
+            <field name="res_model">git.repository</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="git_repository_main_menu"
+            name="Repository"
+            parent="base.menu_management"
+            groups="base.group_system"
+            sequence="400"/>
+
+        <menuitem id="git_repository_setting"
+            name="Git Repository"
+            parent="git_repository_main_menu"
+            action="git_repository_action"
+            groups="base.group_system"/>
+
+    </data>
+</odoo>
