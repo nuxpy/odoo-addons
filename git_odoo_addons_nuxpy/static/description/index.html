@@ -16,13 +16,13 @@
             This product allows you to save a Git repository as long as the Odoo modules published in the repository are public.
         </p>
         <p>
-            Once the repository is saved, a subdirectory is internally generated under "<b>../../../data_dir/addons/VERSION</b>" of the instance.
+            Once the repository is saved, a subdirectory is internally generated under "absolute/path/of<b>/data_dir/addons/VERSION</b>" of the instance.
         </p>
         <p>
             The module searches for the absolute path and within that path clones the repository to make it available in Odoo.
         </p>
         <p>
-            You must keep in mind that the "<b>data_dir/addons/VERSION</b>" directory must have write permissions for the user running the Odoo service.
+            You must keep in mind that the "../../<b>VERSION</b>" directory must have write permissions for the user running the Odoo service.
         </p>
         <p>
             After cloning the repository, a button to update it is displayed; this button basically performs a "<i>git pull</i>" of the repository.
