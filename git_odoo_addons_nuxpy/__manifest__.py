@@ -8,7 +8,7 @@ This module allows you to import modules from free repositories like OCA or othe
     'version': '0.1.1',
     'category': 'setting',
     'author': "nuxpy",
-    'website': "https://www.nuxpy.com",
+    'website': "https://github.com/nuxpy/odoo-addons/tree/16.0",
     'contributors': [
         'Félix Urbina <furbina@nuxpy.com>'
     ],
