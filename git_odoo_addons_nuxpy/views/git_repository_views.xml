@@ -26,9 +26,9 @@
                 <form>
                     <sheet>
                         <group>
-                            <field name="name" placeholder="OCA/server-tools"/>
-                            <field name="url" placeholder="https://github.com/OCA/server-tools"/>
-                            <field name="branch" placeholder="16.0"/>
+                            <field name="name" placeholder="OCA/server-tools" required="1"/>
+                            <field name="url" placeholder="https://github.com/OCA/server-tools" required="1"/>
+                            <field name="branch" placeholder="16.0" required="1"/>
                         </group>
                         <div class="oe_row">
                             <p>
