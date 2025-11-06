@@ -5,7 +5,7 @@
     'description': """
 This module allows you to import modules from free repositories like OCA or others via Git.
     """,
-    'version': '0.1.1',
+    'version': '0.1.2',
     'category': 'setting',
     'author': "nuxpy",
     'website': "https://github.com/nuxpy/odoo-addons/tree/16.0",
