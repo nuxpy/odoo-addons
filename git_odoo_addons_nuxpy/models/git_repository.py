@@ -44,10 +44,11 @@ class GitRepository(models.Model):
             if not os.path.exists(repo_path):
                 os.mkdir(repo_path, mode=0o755)
                 os.system('git clone -b {} {} {}'.format(branch, url, repo_path))
-                vals['addons_path'] = '{}'.format(repo_path)
             else:
                 os.system('cd {}; git pull'.format(repo_path))
 
+            vals['addons_path'] = '{}'.format(repo_path)
+            
         return super(GitRepository, self).create(vals_list)
 
     def git_pull(self):
