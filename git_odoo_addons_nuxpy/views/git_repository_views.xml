@@ -9,7 +9,7 @@
                     <field name="name" placeholder="OCA/server-tools"/>
                     <field name="url" placeholder="https://github.com/OCA/server-tools"/>
                     <field name="branch" placeholder="18.0"/>
-                    <field name="addons_path" invisible="1"/>
+                    <field name="addons_path" column_invisible="1"/>
                     <button name="git_pull"
                         string="Update"
                         type="object"
